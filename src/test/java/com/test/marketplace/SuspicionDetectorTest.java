@@ -29,7 +29,7 @@ public class SuspicionDetectorTest {
 
         SuspicionDetector detector = new SuspicionDetectorImpl();
         List<Object> suspicious = detector.findSuspicious(trades, orders);
-        System.out.println(suspicious);
+       
         // Expected: trade1 and order2 should be suspicious
         assertEquals(2, suspicious.size(), "There should be two suspicious items.");
         assertEquals(trade1, suspicious.get(0), "Trade 1 should be suspicious.");
